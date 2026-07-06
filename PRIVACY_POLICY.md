@@ -5,7 +5,7 @@
 
 This Privacy Policy explains what information the **WakeWise Alarm** mobile
 application ("WakeWise", "the app", "we", "us") collects, how it is used, and
-who it is shared with. WakeWise is provided by **Mason Friday**.
+who it is shared with. WakeWise is provided by **the WakeWise team**.
 
 We designed WakeWise to work with as little personal data as possible. The app
 has **no user accounts, no advertising, no analytics or crash-reporting SDKs,
@@ -207,7 +207,7 @@ of the updated policy.
 
 If you have questions about this Privacy Policy or your data, contact:
 
-**Mason Friday**
+**The WakeWise team**
 Email: **smartcommutealarm@gmail.com**
 
 This policy is governed by the laws of the **State of Florida, United States**.
