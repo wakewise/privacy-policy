@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy Policy for the WakeWise Alarm Android app.">
+<meta name="robots" content="index, follow">
+<title>Privacy Policy — WakeWise Alarm</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f6f8fa;
+    --text: #1c2024;
+    --muted: #5a6472;
+    --border: #e3e7ec;
+    --accent: #2f6df6;
+    --code-bg: #eef1f5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1216;
+      --surface: #171b21;
+      --text: #e6e9ee;
+      --muted: #9aa4b2;
+      --border: #262c34;
+      --accent: #6ea0ff;
+      --code-bg: #1d232b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  header.doc { border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 0.75rem; letter-spacing: -0.01em; }
+  h2 {
+    font-size: 1.3rem; margin: 2.75rem 0 0.75rem; padding-top: 1.75rem;
+    border-top: 1px solid var(--border); letter-spacing: -0.01em;
+  }
+  h3 { font-size: 1.05rem; margin: 1.75rem 0 0.5rem; }
+  p, ul { margin: 0.75rem 0; }
+  ul { padding-left: 1.4rem; }
+  li { margin: 0.35rem 0; }
+  a { color: var(--accent); text-decoration: none; overflow-wrap: anywhere; }
+  a:hover { text-decoration: underline; }
+  strong { font-weight: 600; }
+  .dates { color: var(--muted); font-size: 0.95rem; margin: 0; }
+  .dates span { display: inline-block; margin-right: 1.25rem; }
+  .lede { font-size: 1.05rem; }
+  code {
+    background: var(--code-bg); padding: 0.12em 0.4em; border-radius: 5px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.88em;
+  }
+  .table-scroll { overflow-x: auto; margin: 1rem 0; border: 1px solid var(--border); border-radius: 10px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 0.75rem 0.9rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { background: var(--surface); font-weight: 600; white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+  footer.doc { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="doc">
+    <h1>Privacy Policy for WakeWise Alarm</h1>
+    <p class="dates">
+      <span><strong>Effective date:</strong> 07-05-2026</span>
+      <span><strong>Last updated:</strong> 07-05-2026</span>
+    </p>
+  </header>
+
+  <main>
+    <p class="lede">This Privacy Policy explains what information the <strong>WakeWise Alarm</strong>
+    mobile application (“WakeWise”, “the app”, “we”, “us”) collects, how it is used, and who it is
+    shared with. WakeWise is provided by <strong>the WakeWise team</strong>.</p>
+
+    <p>We designed WakeWise to work with as little personal data as possible. The app has
+    <strong>no user accounts, no advertising, no analytics or crash-reporting SDKs, and does not
+    sell your data.</strong></p>
+
+    <h2 id="summary">1. Summary</h2>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>What</th><th>Why</th><th>Where it goes</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A <strong>hashed device identifier</strong> (SHA-256 of your Android ID)</td>
+            <td>To anchor your 7-day free trial and prevent trial abuse via reinstall</td>
+            <td>Our backend proxy (Cloudflare), stored up to 90 days</td>
+          </tr>
+          <tr>
+            <td>The <strong>addresses / locations</strong> you enter for a commute (home, work, stops)</td>
+            <td>To calculate real-time, traffic-aware travel time so your alarm wakes you at the right moment</td>
+            <td>Sent to Google Maps Platform (via our proxy) to compute the route</td>
+          </tr>
+          <tr>
+            <td><strong>Address search text</strong> you type when picking a place</td>
+            <td>To show address autocomplete suggestions</td>
+            <td>Sent to Google Places directly from the app</td>
+          </tr>
+          <tr>
+            <td><strong>Your IP address</strong></td>
+            <td>Rate limiting / abuse protection; standard networking</td>
+            <td>Seen by our proxy (Cloudflare) and by Google when the app contacts it</td>
+          </tr>
+          <tr>
+            <td><strong>Purchase / subscription status</strong></td>
+            <td>To unlock the paid subscription and verify it is active</td>
+            <td>Handled by Google Play Billing; a purchase token is verified with Google</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Everything else — your alarms, schedules, saved addresses, imported ringtones, chosen
+    background image, and usage statistics — <strong>stays on your device.</strong></p>
+
+    <h2 id="collect">2. Information we collect and process</h2>
+
+    <h3>2.1 Hashed device identifier (free-trial anti-abuse)</h3>
+    <p>WakeWise offers a 7-day free trial. To stop the trial from being reset by uninstalling and
+    reinstalling the app, we anchor the trial start date on our server.</p>
+    <p>To do this, the app reads the Android system value <code>Settings.Secure.ANDROID_ID</code>,
+    computes a one-way <strong>SHA-256 hash</strong> of it, and sends only that hash to our backend
+    proxy. <strong>The raw Android ID never leaves your device.</strong> Our proxy records the first
+    time it sees a given hash and returns that timestamp so the trial length is consistent.</p>
+    <ul>
+      <li>Android ID is already scoped per app-signer and device user; it does not identify you
+      across other apps or reveal your identity.</li>
+      <li>The hash is stored in our key-value store for up to <strong>90 days</strong>, after which
+      it is automatically deleted.</li>
+    </ul>
+
+    <h3>2.2 Commute locations and routes</h3>
+    <p>To compute a traffic-aware wake time, WakeWise needs the <strong>origin, destination, and any
+    intermediate stops</strong> of your commute. You enter these yourself (by typing an address or
+    picking one from autocomplete). WakeWise does <strong>not</strong> access your device's GPS/precise
+    location — the app requests no location permission.</p>
+    <p>When it is time to estimate your commute, the app sends these addresses (or their coordinates)
+    to our backend proxy, which forwards them to the <strong>Google Maps Directions API</strong> to
+    calculate driving time in current traffic. Our proxy does not retain your addresses beyond what is
+    needed to complete the request; Google processes them under its own privacy policy (see Section 4).</p>
+    <p>Your alarms and saved addresses are also stored <strong>locally on your device</strong> in the
+    app's database.</p>
+
+    <h3>2.3 Address autocomplete</h3>
+    <p>When you search for an address, the text you type is sent to the <strong>Google Places SDK</strong>
+    to return matching suggestions and place details. This request goes from your device to Google
+    directly and is subject to Google's privacy policy.</p>
+
+    <h3>2.4 Network information (IP address)</h3>
+    <p>Like any app that makes network requests, WakeWise transmits your device's IP address to the
+    servers it contacts. Our backend proxy uses the IP address for <strong>per-IP rate limiting</strong>
+    to protect the service from abuse. We do not use it to build a profile of you, and we do not store
+    it for analytics.</p>
+
+    <h3>2.5 Subscriptions and payments</h3>
+    <p>The paid subscription is sold and processed entirely through <strong>Google Play Billing</strong>.
+    We never see or store your payment card or billing details — Google handles all of that.</p>
+    <p>When you subscribe, Google Play provides the app a <strong>purchase token</strong>. The app stores
+    this token on your device and forwards it to our backend proxy, which verifies with the
+    <strong>Google Play Developer API</strong> that your subscription is active. The proxy may cache the
+    result (keyed by a hash of the token) for a short time to avoid repeated verification calls.</p>
+
+    <h3>2.6 Information stored only on your device</h3>
+    <p>The following never leaves your device (except through Android's own optional backup — see
+    Section 6) and is not sent to us:</p>
+    <ul>
+      <li>Your alarms, schedules, arrival times, and settings</li>
+      <li>Your saved address book (“Home”, “Work”, etc.)</li>
+      <li>Alarm history and statistics (e.g. minutes of sleep saved)</li>
+      <li>Ringtones you import and any background image you choose</li>
+      <li>App preferences (dark mode, onboarding state, trial/subscription flags)</li>
+    </ul>
+    <p>If you uninstall the app, this on-device data is removed by Android.</p>
+
+    <h2 id="not-collect">3. What we do <strong>not</strong> collect</h2>
+    <ul>
+      <li>No name, email address, phone number, or user account.</li>
+      <li>No precise or background GPS location (the app requests no location permission).</li>
+      <li>No contacts, calendar, photos library, or microphone access.</li>
+      <li>No advertising identifier, and <strong>no advertising</strong>.</li>
+      <li>No third-party analytics or crash-reporting SDKs.</li>
+    </ul>
+
+    <h2 id="third-parties">4. Third-party services</h2>
+    <p>WakeWise relies on the following third parties to function. Each processes data under its own
+    privacy policy:</p>
+    <ul>
+      <li><strong>Google Maps Platform</strong> (Directions API and Places SDK) — computes commute time
+      and provides address autocomplete.
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+      <li><strong>Google Play Billing / Google Play Developer API</strong> — processes subscription
+      payments and verifies entitlement.
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+      <li><strong>Cloudflare</strong> — hosts our backend proxy that fronts the Google Directions API and
+      anchors the free trial.
+      <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">https://www.cloudflare.com/privacypolicy/</a></li>
+    </ul>
+    <p>We do <strong>not</strong> sell your personal information, and we do not share it with third
+    parties except as needed to provide the features described above.</p>
+
+    <h2 id="retention">5. How long we keep data</h2>
+    <ul>
+      <li><strong>Hashed device identifier:</strong> up to 90 days on our proxy, then automatically
+      deleted.</li>
+      <li><strong>Commute addresses:</strong> processed transiently to fulfil a routing request; our
+      proxy does not store them after the request completes. Google retains request data under its own
+      policy.</li>
+      <li><strong>Cached subscription verification:</strong> a hashed purchase token may be cached
+      briefly (about one hour).</li>
+      <li><strong>On-device data:</strong> kept until you delete it in the app or uninstall the app.</li>
+    </ul>
+
+    <h2 id="backup">6. Android backup</h2>
+    <p>If you have Android's system backup or device-transfer feature enabled (a Google account setting
+    you control), Android may back up the app's on-device data — including your alarms, saved addresses,
+    and settings — to your Google account so it can be restored on a new device. This backup is managed
+    by Google under your Google account settings, not by us. You can disable it in your device's backup
+    settings.</p>
+
+    <h2 id="security">7. Security</h2>
+    <p>Requests between the app and our backend proxy are sent over HTTPS and require a bearer token. We
+    send only a one-way hash of your device identifier, never the raw value. No method of transmission or
+    storage is 100% secure, but we limit what we collect specifically to reduce risk.</p>
+
+    <h2 id="children">8. Children's privacy</h2>
+    <p>WakeWise is not directed to children under 13 (or the equivalent minimum age in your jurisdiction),
+    and we do not knowingly collect personal information from children. If you believe a child has
+    provided us information, contact us and we will delete it.</p>
+
+    <h2 id="rights">9. Your rights and choices</h2>
+    <p>Depending on where you live (for example, under the EU/UK GDPR or the California CCPA/CPRA), you
+    may have the right to access, correct, or delete your personal information, or to object to certain
+    processing.</p>
+    <p>Because WakeWise stores most data on your device and holds only a hashed, non-identifying device
+    value on the server, you can exercise most of these rights directly:</p>
+    <ul>
+      <li><strong>Delete on-device data:</strong> clear the app's storage or uninstall the app.</li>
+      <li><strong>Delete the server trial anchor:</strong> it expires automatically within 90 days;
+      contact us if you want it removed sooner.</li>
+      <li><strong>Manage your subscription:</strong> through the Google Play Store subscriptions screen.</li>
+    </ul>
+    <p>To make any other request, contact us at the address below.</p>
+
+    <h2 id="changes">10. Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will revise the “Last updated”
+    date above and, where appropriate, provide a more prominent notice. Continued use of the app after
+    changes take effect constitutes acceptance of the updated policy.</p>
+
+    <h2 id="contact">11. Contact</h2>
+    <p>If you have questions about this Privacy Policy or your data, contact:</p>
+    <p><strong>The WakeWise team</strong><br>
+    Email: <a href="mailto:smartcommutealarm@gmail.com">smartcommutealarm@gmail.com</a></p>
+    <p>This policy is governed by the laws of the <strong>State of Florida, United States</strong>.</p>
+  </main>
+
+  <footer class="doc">
+    <p>© 2026 WakeWise Alarm</p>
+  </footer>
+
+</div>
+</body>
+</html>
